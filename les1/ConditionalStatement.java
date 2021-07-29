@@ -20,22 +20,21 @@ public class ConditionalStatement {
         }
 
         System.out.println("Укажите ваш рост в сантиметрах? ");
-        float height = in.nextFloat()/100;
+        float height = in.nextFloat() / 100;
         if (height < 1.80) {
             System.out.println("Хороший рост! Не всем же быть баскетболистами:) ");
-        }else {
+        } else {
             System.out.println("Хороший рост! ");    
         } 
 
         System.out.println("Укажите первую букву вашего имени латиницей? ");
-        char letter = in.next().charAt(0);
-        if (letter == 'M') {
-            System.out.println("Первая буква имени " + letter);
-        }else if (letter == 'I') {
-                System.out.println("Первая буква имени " + letter);
-        }else {
+        char firstLetterName = in.next().charAt(0);
+        if (firstLetterName == 'M') {
+            System.out.println("Первая буква имени " + firstLetterName);
+        } else if (firstLetterName == 'I') {
+                System.out.println("Первая буква имени " + firstLetterName);
+        } else {
                 System.out.println("Первая буква имени ни М и ни I");
         }
-           
     }
 }    
