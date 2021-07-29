@@ -6,34 +6,36 @@ public class ConditionalStatement {
         System.out.println("Сколько вам лет? ");
         int age = in.nextInt();
         if (age > 20) {
-        System.out.println("А больше 20 и не дашь:) ");
+            System.out.println("А больше 20 и не дашь:) ");
         }
+
         System.out.println("Укажите ваш пол M/F? ");
         char gender = in.next().charAt(0);
         if (gender == 'M') {
-        System.out.println("Мужской пол ");
+            System.out.println("Мужской пол ");
         }
+
         if (gender != 'M') {
-        System.out.println("Немужcкой пол ");
+            System.out.println("Немужcкой пол ");
         }
+
         System.out.println("Укажите ваш рост в сантиметрах? ");
         float height = in.nextFloat()/100;
         if (height < 1.80) {
-        System.out.println("Хороший рост! Не всем  же быть баскетболистами:) ");
-        }
-        else {
-        System.out.println("Хороший рост! ");    
+            System.out.println("Хороший рост! Не всем же быть баскетболистами:) ");
+        }else {
+            System.out.println("Хороший рост! ");    
         } 
+
         System.out.println("Укажите первую букву вашего имени латиницей? ");
-        char name = in.next().charAt(0);
-        if (name == 'M') {
-        System.out.println("Первая буква имени " + name);
+        char letter = in.next().charAt(0);
+        if (letter == 'M') {
+            System.out.println("Первая буква имени " + letter);
+        }else if (letter == 'I') {
+                System.out.println("Первая буква имени " + letter);
+        }else {
+                System.out.println("Первая буква имени ни М и ни I");
         }
-        else if (name == 'I') {
-        System.out.println("Первая буква имени " + name);
-        }
-        else {
-        System.out.println("Первая буква имени ни М и ни I");
-        }   
+           
     }
 }    
